@@ -1,109 +1,23 @@
 /* Body styles */
 body {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50px center;
+    color: rgba(51, 51, 51, 0.5); /* Adjust opacity as needed */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-/* Description styles */
-.description {
-    padding: 20px;
-}
-
-/* Music styles */
-.music ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.music ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.music ul li img {
-    width: 100px; /* Adjust as needed */
-    height: auto;
-}
-
-/* Links styles */
-.links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.links ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.links ul li img {
-    width: 100px; /* Adjust as needed */
-    height: auto;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center; /* Center the text */
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 600px) {
-    header {
-        padding: 10px;
-    }
-
-    .description,
-    .music,
-    .links {
-        padding: 10px;
-    }
-
-    .music ul li,
-    .links ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    footer {
-        padding: 5px;
-    }
-}
-
-/* Additional CSS for design enhancements */
-body {
-    background-image: url('background-image.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     flex-direction: column;
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
@@ -114,6 +28,7 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Section styles */
 section {
     padding: 20px;
     margin: 20px;
@@ -151,14 +66,15 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-    width: 70%;
-    max-width: 800px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Center the text */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -233,26 +149,24 @@ iframe {
     margin-bottom: 20px;
 }
 
-/* Adjusting the footer with Japanese translation */
-body {
-    background-image: url('background-image.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50px center;
-    color: rgba(51, 51, 51, 0.5); /* Adjust opacity as needed */
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-}
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
 
-@media screen and (max-width: 768px) {
-    body {
-        background-size: contain; /* Adjust as needed */
-        background-attachment: scroll; /* Adjust as needed */
+    .description,
+    section,
+    .contact {
+        padding: 10px;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 5px;
     }
 }

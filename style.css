@@ -1,0 +1,87 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100%;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Description styles */
+.description {
+    padding: 20px;
+}
+
+/* Music styles */
+.music ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.music ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.music ul li img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Links styles */
+.links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.links ul li img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    .description,
+    .music,
+    .links {
+        padding: 10px;
+    }
+
+    .music ul li,
+    .links ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}

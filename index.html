@@ -8,7 +8,9 @@
     <style>
         /* Additional CSS for design enhancements */
         body {
-            background-color: #f5f5f5;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-attachment: fixed;
             color: #333;
             margin: 0;
             padding: 0;
@@ -121,6 +123,49 @@
         .links img {
             width: 80px; /* Adjust as needed */
             height: auto;
+        }
+
+        /* Small changes for a cooler website */
+
+        /* Polish translation for "Music Platforms" */
+        .links h2 {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Adding a pulsating animation to social media icons */
+        .links img {
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        /* Using French for the Songs section */
+        .songs h2 {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Adjusting the footer with Japanese translation */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            width: 70%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer::after {
+            content: "© 2024 JavidFlowMaster. All rights reserved.";
         }
     </style>
 </head>
